@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cairo:wght@200..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+:root {
+    --primary-color: #0E8784;
+    --secondary-color: #FEFCF7;
+    --text-color: #333D4B;
+    --text-color-2: #83888F;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,23 +30,26 @@ h6 {
     font-family: "Fraunces", serif;
 }
 
+span {
+    font-family: "Fraunces", serif;
+}
+
 .main-container {
     width: 1280px;
-    max-width: 90%;
     margin: 0 auto;
-}
 
-@media screen and (max-width: 992px) {
-    .main-container {
+    @media screen and (max-width: 992px) {
         width: 704px;
     }
-}
 
-@media screen and (max-width: 767px) {
-    .main-container {
+    @media screen and (max-width: 767px) {
         width: 343px;
     }
 }
+
+
+
+
 
 header {
     width: 100%;
@@ -47,8 +57,6 @@ header {
 
     .main-container {
         display: flex;
-        width: 1280px;
-        max-width: 90%;
         justify-content: space-between;
         padding-top: 40px;
 
@@ -91,11 +99,6 @@ header {
                             color: #333D4B;
                         }
 
-                        &:focus {
-                            border-radius: 4px;
-                            border: 266px solid #0E8784;
-                            color: #333D4B;
-                        }
                     }
                 }
 
@@ -120,7 +123,6 @@ header {
         height: 548px;
         margin-top: 40px;
         position: relative;
-        width: 1280px;
 
         img {
             width: 100%;
@@ -335,13 +337,13 @@ header {
 
 .why-us {
     .main-container {
-        width: 1280px;
         padding-top: 96px;
         gap: 64px;
         display: flex;
         flex-direction: column;
         position: relative;
         top: 96px;
+        margin-bottom: 96px;
 
         .cover {
             width: 100%;
@@ -468,5 +470,187 @@ header {
 
             }
         }
+    }
+}
+
+.how-it-work {
+    padding-top: 96px;
+    width: 100%;
+
+   
+
+    .cover {
+        width: 1110px;
+        gap: 64px;
+
+        @media screen and (max-width: 992px) {
+            width: 704px;
+            padding-top: 40px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 343px;
+            padding-top: 40px;
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 150%;
+            color: rgba(131, 136, 143, 1);
+        }
+
+        .text {
+            width: 1110px;
+            gap: 64px;
+            
+            @media screen and (max-width: 992px) {
+                width: 704px;
+                gap: 80px;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 343px;
+                gap: 64px;
+            }
+
+            .steps {
+                width: 793px;
+                max-width: 100%;
+                gap: calc(100% / 3);
+                position: relative;
+                
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    border: 2px solid rgba(253, 214, 186, 1);
+                    z-index: -1;
+                }
+
+                @media screen and (max-width: 992px) {
+                    width: 464px;
+                }
+                
+                .step {
+                    width: 31px;
+                    height: 31px;
+                    border-radius: 50px;
+                    border: 2px solid var(--primary-color);
+                    background-color: white;
+                }
+            }
+
+            .details {
+                width: 1047px;
+                gap: 96px;
+
+                @media screen and (max-width: 992px) {
+                    width: 704px;
+                    gap: 20px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    width: 343px;
+                    gap: 40px;
+                }
+
+                .step-item {
+                    width: 285px;
+                    gap: 40px;
+                    
+                    @media screen and (max-width: 992px) {
+                        width: 221.3333282470703px;
+                        gap: 40px;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        width: 343px;
+                        gap: 24px;
+                    }
+
+                    span {
+                        font-weight: "Fraunces", serif;
+                        font-weight: 900;
+                        font-size: 72px;
+                        color: rgba(253, 214, 186, 1);
+                    }
+
+                    h3 {
+                        width: 285px;
+                        height: 73px;
+                        font-weight: 900;
+                        font-style: black;
+                        font-size: 32px;
+                        line-height: 113.99999999999999%;
+
+                        @media screen and (max-width: 992px) {
+                            width: 221.3333282470703px;
+                            height: 73px;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            width: 343px;
+                            height: 73px;
+                        }
+                    }
+
+                    p {
+                        width: 285px;
+                        height: 130px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 160%;
+
+                        @media screen and (max-width: 992px) {
+                            width: 221.3333282470703px;
+                            height: 156px;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            width: 343px;
+                            height: 130px;
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color: rgba(14, 135, 132, 1);
+            width: 218px;
+            padding-top: 16px;
+            padding-right: 32px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            border-radius: 6px;
+
+
+            a {
+                font-family: "Fraunces", serif;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 140%;
+                text-align: center;
+                color: var(--secondary-color);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    margin-top: 140px;
+    
+    .main-container {
+        justify-content: space-between;
+        padding: 48px 80px;
+        background: rgba(51, 61, 75, 1);
     }
 }
