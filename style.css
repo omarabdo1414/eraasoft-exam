@@ -47,10 +47,7 @@ span {
     }
 }
 
-
-
-
-
+/* Header Styling */
 header {
     width: 100%;
     margin: 0 auto;
@@ -110,7 +107,7 @@ header {
     }
 }
 
-
+/* Hero Styling */
 .hero {
     width: 100%;
     margin: 0 auto;
@@ -212,6 +209,7 @@ header {
     }
 }
 
+/* Our Collection Styling */
 .our-collection {
     .our-collection-container {
         width: 1100px;
@@ -335,6 +333,7 @@ header {
     }
 }
 
+/* Why Us Styling */
 .why-us {
     margin-top: 140px;
     .main-container {
@@ -473,6 +472,7 @@ header {
     }
 }
 
+/* How It Work Styling */
 .how-it-work {
     padding-top: 140px;
     width: 100%;
@@ -644,6 +644,7 @@ header {
     }
 }
 
+/* Footer Styling */
 footer {
     width: 100%;
     margin-top: 140px;
