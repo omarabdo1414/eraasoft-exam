@@ -725,6 +725,10 @@ footer {
                     line-height: 130%;
                     letter-spacing: 0.92px;
                     text-transform: uppercase;
+
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
                 }
         }
 
